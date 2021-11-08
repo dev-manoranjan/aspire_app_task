@@ -32,7 +32,7 @@ function* getWeeklyInfo(action) {
 
 async function fetchCardInfo() {
     try{
-        const response = await fetch("https://demomockexam.edusols.com/totalassessment/api/v2/demo/customer_card_data.php?method=getCardDetails");
+        const response = await fetch("https://codecompel.com/api/demo/customer_card_data.php?method=getCardDetails");
         if (response.ok) {
             return await response.json();
         }
@@ -44,7 +44,7 @@ async function fetchCardInfo() {
 
  async function fetchWeeklyInfo() {
     try{
-        const response = await fetch("https://demomockexam.edusols.com/totalassessment/api/v2/demo/customer_card_data.php?method=getWeeklySpendingLimit");
+        const response = await fetch("https://codecompel.com/api/demo/customer_card_data.php?method=getWeeklySpendingLimit");
         if (response.ok) {
             return await response.json();
         }
